@@ -1,0 +1,139 @@
+<html>
+<head>
+<title>MASTER Registration FORM</title>
+
+</head>
+<style>
+.signin {
+  background-color: white;
+  text-align: center;
+}
+body {
+    font-size: 16px;
+    background-image:url('apbg2.png')
+    font-family'Courier New', Courier, monospace;
+}
+section
+{
+   
+   background-size: cover;
+background-repeat: no-repeat;
+height: 100%;
+}
+
+h2 {
+    text-align: center;
+    text-decoration: underline;
+     color:white;
+}
+
+form {
+    width: 50%;
+     background-color:white;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    margin: 50px auto 0;
+    border-radius: 5px;
+    background: black;
+}
+label {
+    display: block;
+    margin-bottom: 5px
+   
+}
+.logo{
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+}
+label i {
+    color:#999;
+    font-size: 80%;
+}
+input, select {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+      background: white;
+    
+}
+.row {
+    padding-bottom: 10px;
+}
+.form-inline {
+    border: 1px solid #ccc;
+    padding: 8px 10px 4px;
+    border-radius: 2px;
+}
+.form-inline label, .form-inline input {
+    display: inline-block;
+    width: auto;
+    padding-right: 15px;
+}
+.error {
+    color: red;
+    font-size: 90%;
+}
+input[type="submit"] {
+    font-size: 110%;
+    font-weight: 100;
+    background: red;
+    border-color: red;
+    box-shadow: 0 3px 0 #0165b6;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: green;
+}
+b
+{
+     color:white;
+}
+</style>
+<section>
+<body style="background-image:url('apbg3.jpg')">
+<form name="" onsubmit="return validateForm()" action="Master_Register" method="post">
+    <h2> Master Registration Form</h2>
+    <div class="row">
+        <label><b>Dance Master Name</b></label>
+        <input type="text" name="name" required>
+        <div class="error" id="nameErr"></div>
+    </div>
+    <div class="row">
+        <label><b>Email Address</b></label>
+        <input type="text" name="email" required>
+        <div class="error" id="emailErr"></div>
+    </div>
+    <div class="row">
+        <label><b>Mobile Number</b></label>
+        <input type="text" name="mobile" maxlength="10" required>
+        <div class="error" id="mobileErr"></div>
+    </div>
+    <div class="row">
+        <label><b>Gender</b></label>
+        <div class="form-inline">
+            <label><input type="radio" name="gender" value="male" required><b> Male</b></label>
+            <label><input type="radio" name="gender" value="female" required><b> Female</b></label>
+        </div>
+        <div class="error" id="genderErr"></div>
+    </div>
+   <b>Enter APPLY date:<input type="text" name="do" required></b>
+   <label style="color: #ffffff;size: 30%;font-size: large;">Enter country name</label>
+   <input type="text" name="country">
+   <label style="color: white;size: 30%;font-size: large;">Enter type of dance name</label>
+   <input type="text" name="dname">
+    <div class="row">
+        <input type="submit" value="Submit">
+    </div>
+<div class="container signin">
+    <p>Already have an account?<a href="login1.html">login</a></li></p>
+  </div>
+</section>
+</form>
+</body>
+</html>
